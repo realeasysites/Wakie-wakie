@@ -503,3 +503,4 @@ main,.top,.foot,.ticker{position:relative}
 .gpage__cow{position:absolute;right:14%;top:-30px;width:200px;animation:leap 6s ease-in-out infinite}
 @media (max-width:620px){.gpage__moon{width:110px;right:0;top:-10px}.gpage__cow{width:110px;right:20%;top:-36px}}
 @media (max-width:620px){.foot__brand{grid-column:1/-1}}
+.alt__cow{max-width:none;width:50px}
