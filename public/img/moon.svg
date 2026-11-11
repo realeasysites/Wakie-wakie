@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440">
+  <defs>
+    <filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7"/>
+      <feDisplacementMap in="SourceGraphic" scale="5"/>
+    </filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="2"/><feColorMatrix values="0 0 0 0 0.33  0 0 0 0 0.25  0 0 0 0 0.11  0 0 0 0.18 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+    <clipPath id="disc"><circle cx="220" cy="220" r="196"/></clipPath>
+    <clipPath id="shade"><path d="M220 24a196 196 0 0 1 0 392a105 196 0 0 0 0-392z"/></clipPath>
+  </defs>
+  <g filter="url(#ink)" stroke="#55401d" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="220" cy="220" r="196" fill="#f3ead3" stroke-width="6"/>
+    <circle cx="220" cy="220" r="196" fill="#f3ead3" filter="url(#grain)" stroke="none"/>
+    <!-- hatched shadow side -->
+    <g clip-path="url(#disc)" stroke-width="2.4" opacity=".55">
+      <g clip-path="url(#shade)">
+        <path d="M250 10 160 430M272 10 182 430M294 10 204 430M316 10 226 430M338 10 248 430M360 10 270 430M382 10 292 430M404 10 314 430M426 10 336 430M448 10 358 430"/>
+      </g>
+    </g>
+    <!-- craters -->
+    <g stroke-width="3.5">
+      <circle cx="130" cy="140" r="24"/><path d="M118 150c6 8 20 8 26 0" stroke-width="2.5"/>
+      <circle cx="320" cy="300" r="30"/><path d="M304 312c8 10 26 10 34 0" stroke-width="2.5"/>
+      <circle cx="300" cy="115" r="13"/>
+      <circle cx="110" cy="285" r="10"/>
+      <circle cx="205" cy="345" r="16"/>
+    </g>
+    <!-- sleepy face (their logo eyes) -->
+    <g stroke-width="5">
+      <path d="M148 212c14 14 44 14 58 0"/>
+      <path d="M152 222l-6 12M164 226l-3 13M177 227v13M190 226l3 13M202 222l6 12" stroke-width="4"/>
+      <path d="M244 212c14 14 44 14 58 0"/>
+      <path d="M248 222l-6 12M260 226l-3 13M273 227v13M286 226l3 13M298 222l6 12" stroke-width="4"/>
+      <path d="M200 280c12 12 38 12 50 0" stroke-width="4.5"/>
+    </g>
+    <circle cx="160" cy="262" r="13" fill="#e8a48f" stroke="none" opacity=".7"/>
+    <circle cx="290" cy="262" r="13" fill="#e8a48f" stroke="none" opacity=".7"/>
+  </g>
+  <path d="M225 160c2 13 5 16 17 18-12 3-15 6-17 19-2-13-5-16-17-19 12-2 15-5 17-18z" fill="#d9472b"/>
+</svg>

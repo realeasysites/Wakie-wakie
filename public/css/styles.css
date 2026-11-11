@@ -374,3 +374,132 @@ h2{font-size:clamp(2.1rem,4.6vw,3.6rem)}
   .g__cap{opacity:1;transform:none}
   .doodle--g{display:none}
 }
+
+/* =====================================================
+   MOON & STARS THEME  — "To the moon"
+   ===================================================== */
+:root{--brown:#55401d;--paper:#f4eee2;--paper-img:url(/img/paper.webp)}
+body{background-color:var(--paper);background-image:var(--paper-img);background-size:480px 480px}
+.menu::before{display:none}
+.sky{position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:url(/img/stars.svg),url(/img/stars.svg);background-size:640px 640px,900px 900px;opacity:.9}
+main,.top,.foot,.ticker{position:relative}
+.top{background:rgba(244,238,226,.86)}
+.menu{background-color:#ece4d3;background-image:var(--paper-img),url(/img/stars.svg);background-size:480px,640px}
+.t101,.favs,.buzz,.visit{background:transparent}
+
+/* Arch frames — the shape that ties everything together */
+.arch{border-radius:999px 999px 14px 14px!important;overflow:hidden}
+.arch img{border-radius:inherit}
+.snap.arch{padding:9px 9px 12px;border-radius:999px 999px 10px 10px!important}
+.snap.arch img,.snap.arch .ph{border-radius:999px 999px 4px 4px}
+
+/* Hero: moon rising behind the food, cow leaping over */
+.hero{padding-top:50px}
+.hero__art{height:600px}
+.hero__moon{position:absolute;width:74%;right:-4%;top:2%;z-index:0;animation:moonrise 1.6s cubic-bezier(.2,.8,.2,1) both}
+@keyframes moonrise{from{transform:translateY(70px);opacity:0}to{transform:none;opacity:1}}
+.hero__cow{position:absolute;width:52%;left:-2%;top:-4%;z-index:6;transform-origin:50% 100%;animation:leap 6s ease-in-out infinite}
+@keyframes leap{0%,100%{transform:translate(0,0) rotate(-6deg)}50%{transform:translate(22px,-18px) rotate(2deg)}}
+.snap--a{width:44%;height:62%;left:0;top:34%;transform:rotate(-3deg);z-index:3}
+.snap--b{width:32%;height:46%;left:41%;top:48%;transform:rotate(3deg);z-index:4}
+.snap--c{width:30%;height:42%;right:0;top:56%;transform:rotate(-2deg);z-index:5}
+.hero__art:hover .snap--a{transform:rotate(-5deg) translateY(-6px)}
+.hero__art:hover .snap--b{transform:rotate(5deg) translateY(-6px)}
+.hero__star{right:auto;left:58%;top:-2%;width:38px}
+
+/* Altitude tracker */
+.alt{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:40;display:flex;flex-direction:column;align-items:center;gap:10px;opacity:0;transition:opacity .4s;pointer-events:none}
+.alt.show{opacity:1}
+.alt__moon{width:44px;transition:transform .5s}
+.alt.arrived .alt__moon{transform:scale(1.25) rotate(-8deg)}
+.alt__track{position:relative;width:4px;height:34vh;background-image:radial-gradient(circle,var(--brown) 1.4px,transparent 1.8px);background-size:4px 12px;opacity:.85}
+.alt__cow{position:absolute;width:54px;left:50%;bottom:calc(var(--p,0) * 100%);transform:translate(-50%,50%) rotate(-70deg)}
+.alt__label{writing-mode:vertical-rl;transform:rotate(180deg);font-size:1.15rem;color:var(--brown)}
+@media (max-width:1240px){.alt{display:none}}
+
+/* Favorites shelf: arched cards */
+.dish{border-radius:200px 200px 22px 22px}
+.dish__img{border-radius:200px 200px 0 0;overflow:hidden;margin:10px 10px 0}
+.dish__tag{top:auto;bottom:14px;left:50%;transform:translateX(-50%);white-space:nowrap}
+.dish--type{border-radius:200px 200px 22px 22px;padding-top:90px;background-color:#f6f0e3;background-image:url(/img/stars.svg);background-size:420px}
+.dish--type .dish__tag{top:40px;bottom:auto}
+.dish--type .dish__doodle{margin-top:-20px}
+
+/* Menu: every section is a night-sky window */
+.menu__list{column-gap:36px}
+.menu__cat{position:relative;background:var(--paper) var(--paper-img);background-size:480px;border:2.5px solid var(--sage-d);border-radius:300px 300px 26px 26px;padding:96px 30px 22px;margin:0 0 36px;box-shadow:0 18px 30px -24px rgba(38,48,42,.5)}
+.menu__cat::before{content:"";position:absolute;left:50%;top:18px;transform:translateX(-50%);width:170px;height:52px;background:url(/img/arch-deco.svg) center/contain no-repeat}
+.menu__cat::after{content:"";position:absolute;inset:8px;border:1.5px dashed rgba(85,64,29,.28);border-radius:290px 290px 20px 20px;pointer-events:none}
+.menu__cat h3{text-align:center;border-bottom:0;margin-bottom:10px;font-size:1.9rem}
+.mi:last-child{border-bottom:0}
+.menu__empty{text-align:center}
+
+/* Thai 101 entries get a tiny moon phase each */
+.dict li{position:relative}
+.dict li::after{content:"";position:absolute;right:16px;top:20px;width:22px;height:22px;border-radius:50%;box-shadow:inset -7px 0 0 0 var(--brown);opacity:.35}
+.dict li:nth-child(2n)::after{box-shadow:inset 7px 0 0 0 var(--brown)}
+.dict li:nth-child(3n)::after{box-shadow:inset -12px 0 0 0 var(--brown)}
+
+/* Story: you arrive at the moon */
+.story{background-color:#33432f;background-image:url(/img/stars-light.svg),radial-gradient(ellipse at 30% 40%,#46593f 0%,#33432f 60%);background-size:640px,100% 100%;padding:130px 0 120px}
+.story__grid{grid-template-columns:1fr 1fr;gap:60px}
+.story__media{position:relative;min-height:560px}
+.story__moon{position:relative;width:min(470px,90%);margin:60px auto 0}
+.story__moonimg{width:100%;filter:drop-shadow(0 0 60px rgba(243,234,211,.35))}
+.story__friends{position:absolute;width:56%;left:22%;top:-34%;filter:drop-shadow(0 8px 0 rgba(0,0,0,.08))}
+.story__photo.arch{position:absolute;left:-10px;bottom:-30px;width:190px;height:250px;border:8px solid var(--cream);transform:rotate(-5deg);box-shadow:0 20px 40px -16px rgba(0,0,0,.6)}
+.story__photo img{width:100%;height:100%;object-fit:cover;object-position:30% 75%}
+
+/* Gallery + teaser arches */
+.g{border-radius:999px 999px 18px 18px}
+.g:nth-child(3n+2){border-radius:18px 18px 999px 999px}
+.g--art{border-radius:50%!important;aspect-ratio:1;display:grid;place-items:center}
+.g--art img{width:78%}
+.teaser__grid img{border-radius:999px 999px 12px 12px}
+.press__item{border-radius:120px 120px 22px 22px;text-align:center;padding-top:34px}
+
+/* Visit + contact get a moon wink */
+.visit__grid{border-radius:220px 32px 32px 32px}
+.hello{background-image:url(/img/stars-light.svg);background-size:640px}
+
+@media (max-width:980px){
+  .hero__art{height:480px}
+  .story__media{min-height:460px}
+  .story__photo.arch{width:150px;height:200px}
+}
+@media (max-width:620px){
+  .hero__art{height:390px;margin-top:10px}
+  .hero__cow{width:56%;top:-6%}
+  .menu__cat{padding:84px 18px 16px;border-radius:220px 220px 22px 22px}
+  .menu__cat::after{border-radius:212px 212px 16px 16px}
+  .story__media{min-height:380px}
+  .story__friends{top:-30%}
+  .visit__grid{border-radius:120px 24px 24px 24px}
+  .visit__card{padding-top:60px}
+}
+@media (prefers-reduced-motion:reduce){.hero__cow,.hero__moon{animation:none}}
+
+/* --- moon theme fixes --- */
+.sky{opacity:.6}
+.hero__copy{position:relative;z-index:2}
+.hero__copy::before{content:"";position:absolute;inset:-30px -40px -30px -60px;z-index:-1;background:radial-gradient(ellipse at 40% 50%,var(--paper) 45%,rgba(244,238,226,0) 72%)}
+.hero__moon{width:70%;right:0;top:4%}
+.hero__cow{width:50%;left:22%;top:-9%}
+@keyframes leap{0%,100%{transform:translate(-14px,6px) rotate(-8deg)}50%{transform:translate(18px,-14px) rotate(3deg)}}
+.snap--a{width:38%;height:54%;left:0;top:42%}
+.snap--b{width:27%;height:40%;left:37%;top:57%}
+.snap--c{width:27%;height:42%;right:2%;top:52%}
+.story__friends{right:auto;bottom:auto;aspect-ratio:auto;border-radius:0;background:none;border:0;box-shadow:none;display:block;height:auto;transform:rotate(-3deg);
+  width:54%;left:23%;top:-30%;filter:drop-shadow(0 0 1px #f3ead3) drop-shadow(0 0 1px #f3ead3) drop-shadow(0 0 2px #f3ead3) drop-shadow(0 0 14px rgba(243,234,211,.35))}
+.story__copy{position:relative;z-index:1}
+@media (max-width:620px){
+  .hero__cow{width:56%;left:16%;top:-10%}
+  .snap--a{width:44%;height:52%;top:44%}.snap--b{width:30%;height:40%;left:40%;top:58%}.snap--c{width:30%;height:40%;top:50%}
+  .story__friends{top:-26%}
+}
+.snap--a{right:auto;bottom:auto}.snap--b{right:auto;bottom:auto}.snap--c{left:auto;bottom:auto}
+.hero__copy::before{inset:-20px -20px -20px -20px;background:radial-gradient(ellipse at 45% 50%,rgba(244,238,226,.9) 35%,rgba(244,238,226,0) 70%)}
+.gpage__moon{position:absolute;right:4%;top:0;width:210px;opacity:.95}
+.gpage__cow{position:absolute;right:14%;top:-30px;width:200px;animation:leap 6s ease-in-out infinite}
+@media (max-width:620px){.gpage__moon{width:110px;right:0;top:-10px}.gpage__cow{width:110px;right:20%;top:-36px}}
+@media (max-width:620px){.foot__brand{grid-column:1/-1}}

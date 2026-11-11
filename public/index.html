@@ -23,6 +23,12 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<div class="sky" aria-hidden="true"></div>
+<div class="alt" aria-hidden="true">
+  <img class="alt__moon" src="/img/moon.svg" alt="">
+  <span class="alt__track"><img class="alt__cow" src="/img/cow.svg" alt=""></span>
+  <span class="alt__label hand">to the moon</span>
+</div>
 
 <header class="top" id="top">
   <div class="wrap top__inner">
@@ -63,15 +69,13 @@
       <img class="doodle doodle--hero" src="/img/star-doodle.png" alt="" width="120" height="120">
       <p class="hero__note hand">↳ crispy crab omelets, Thai milk tea &amp; a whole lot of mango</p>
     </div>
-    <div class="hero__art" aria-hidden="false">
-      <figure class="snap snap--a"><img src="/img/ocean-toast.jpg" alt="Ocean Toast — grilled shrimp, tom yum sauce, cilantro and fried shallot on sourdough" width="1000" height="1196" fetchpriority="high"></figure>
-      <figure class="snap snap--b"><img src="/img/green-boost.jpg" alt="Green Boost smoothie topped with bee pollen in a Wakie Wakie's cup" width="900" height="1121"></figure>
-      <figure class="snap snap--c"><img src="/img/thai-milk-tea.jpg" alt="Iced Thai milk tea in a Wakie Wakie's cup" width="900" height="1121"></figure>
+    <div class="hero__art">
+      <img class="hero__moon" src="/img/moon.svg" alt="" width="440" height="440">
+      <img class="hero__cow" src="/img/cow.svg" alt="Hand-drawn cow jumping over the moon with a smoothie" width="470" height="300">
+      <figure class="snap snap--a arch"><img src="/img/ocean-toast.jpg" alt="Ocean Toast — grilled shrimp, tom yum sauce, cilantro and fried shallot on sourdough" width="1000" height="1196" fetchpriority="high"></figure>
+      <figure class="snap snap--b arch"><img src="/img/green-boost.jpg" alt="Green Boost smoothie topped with bee pollen in a Wakie Wakie's cup" width="900" height="1121"></figure>
+      <figure class="snap snap--c arch"><img src="/img/thai-milk-tea.jpg" alt="Iced Thai milk tea in a Wakie Wakie's cup" width="900" height="1121"></figure>
       <svg class="hero__star" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-star"/></svg>
-      <div class="eyes" aria-hidden="true">
-        <svg viewBox="0 0 120 50" class="eye"><use href="#i-eye"/></svg>
-        <svg viewBox="0 0 120 50" class="eye"><use href="#i-eye"/></svg>
-      </div>
     </div>
   </div>
 </section>
@@ -142,11 +146,14 @@
 <section class="story" id="story" aria-labelledby="story-h">
   <div class="wrap story__grid">
     <div class="story__media">
-      <figure class="story__photo"><img src="/img/dining-room.jpg" alt="The Wakie Wakie's dining room on Main Street in Westbrook, with mismatched wood chairs, plants and hand-painted art" width="1000" height="1323" loading="lazy"></figure>
-      <figure class="story__friends"><img src="/img/three-friends.png" alt="Hand-drawn illustration of the three Wakie Wakie's founders sharing breakfast" width="548" height="680" loading="lazy"></figure>
+      <div class="story__moon">
+        <img class="story__moonimg" src="/img/moon.svg" alt="" width="440" height="440" loading="lazy">
+        <img class="story__friends" src="/img/three-friends.png" alt="Hand-drawn illustration of the three Wakie Wakie's founders sharing breakfast, sitting on the moon" width="548" height="680" loading="lazy">
+      </div>
+      <figure class="story__photo arch"><img src="/img/dining-room.jpg" alt="The Wakie Wakie's dining room on Main Street in Westbrook" width="1000" height="1323" loading="lazy"></figure>
     </div>
     <div class="story__copy">
-      <p class="eyebrow eyebrow--light">Our story</p>
+      <p class="eyebrow eyebrow--light">Our story · you made it to the moon</p>
       <h2 id="story-h">“To the moon.”</h2>
       <p>Wakie Wakie's began with a simple dream shared by three women with a deep love for cooking and a passion for clean, fresh food — organic whenever possible.</p>
       <p>Thai food is our culture, and we know it can be light, fresh and good for you. So we built a breakfast spot around it: a cozy room on Main Street filled with hand-painted art, where every dish is approachable and every smoothie gives your morning a lift.</p>
@@ -319,5 +326,6 @@
 <script src="/js/lightbox.js" defer></script>
 <script src="/js/fbfeed.js" defer></script>
 <script src="/js/main.js" defer></script>
+<script src="/js/moon.js" defer></script>
 </body>
 </html>
