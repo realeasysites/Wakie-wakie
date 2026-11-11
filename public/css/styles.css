@@ -271,3 +271,26 @@ h2{font-size:clamp(2.1rem,4.6vw,3.6rem)}
   .dock__main{background:var(--star)}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* ---- Real photos + brand doodles ---- */
+.doodle{position:absolute;pointer-events:none;opacity:.9}
+.hero__copy,.favs__head{position:relative}
+.doodle--hero{width:70px;right:4%;bottom:-40px;transform:rotate(14deg)}
+.doodle--favs{width:64px;left:-30px;top:-46px;transform:rotate(-10deg)}
+.snap img{background:var(--cream)}
+.dish--type{background:var(--cream);border:2px dashed var(--sage-l);box-shadow:none;padding:70px 26px 26px;position:relative;justify-content:flex-start}
+.dish--type .dish__tag{background:#fff}
+.dish--type .dish__doodle{width:110px;align-self:flex-end;margin:-40px -6px 18px 0;transform:rotate(12deg)}
+.dish--type h3{font-size:2.1rem;margin:0 0 12px}
+.dish--type p{color:var(--muted);font-size:.98rem;margin:0}
+.dish__price{margin-top:auto;padding-top:18px;font-weight:700;color:var(--star);font-size:1.2rem}
+.story__media{position:relative}
+.story__photo{height:600px}
+.story__friends{position:absolute;right:-34px;bottom:-40px;margin:0;width:230px;aspect-ratio:1;border-radius:50%;background:var(--cream);display:grid;place-items:center;box-shadow:0 20px 40px -18px rgba(0,0,0,.6);transform:rotate(-6deg);border:6px solid var(--paper)}
+.story__friends img{width:72%;height:auto}
+.story::after{display:none}
+@media (max-width:980px){.story__photo{height:460px}.story__friends{right:-6px;width:170px}.doodle--favs{left:auto;right:0}}
+@media (max-width:620px){.story__photo{height:400px}.story__friends{width:140px;bottom:-30px}.doodle--hero{display:none}}
+.doodle--favs{left:-70px;top:-70px;width:58px}
+.story__photo img{object-position:20% 70%}
+@media (max-width:1300px){.doodle--favs{left:auto;right:4%;top:-40px}}

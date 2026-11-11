@@ -3,7 +3,13 @@
   // Real photos: map a slot / dish name to an image in /img. Anything not listed keeps its placeholder.
   const PHOTOS = {
     slots: {},
-    dishes: {},
+    dishes: {
+      'Ocean Toast': '/img/ocean-toast.jpg',
+      'Thai Milk Tea': '/img/thai-milk-tea.jpg',
+      'Cottage Paradise': '/img/cottage-paradise.jpg',
+      'Green Boost Smoothie': '/img/green-boost.jpg',
+      'Summer Garden Smoothie': '/img/summer-garden.jpg',
+    },
   };
 
   // Hours (0 = Sunday). null = closed.
@@ -70,15 +76,22 @@
     'Crab Out Loud!': 'Thai crispy omelet', 'Kai Kra Ta': 'Thai skillet breakfast', 'Ocean Toast': 'Shrimp + tom yum',
     'Koi Sao (Khao Soi)': 'Northern Thai curry', 'Fluffy Blue': 'Maine blueberry', 'Aloha Jungle Bowl': 'Crowd favorite',
     'Thai Milk Tea': 'Iced & creamy', 'Cottage Paradise': 'Ricotta + maple',
+    'Green Boost Smoothie': 'Bee pollen boost', 'Summer Garden Smoothie': 'Mango + passion fruit',
   };
 
   function renderShelf() {
-    const favs = MENU.categories.flatMap((c) => c.items).filter((i) => i.fav);
-    const tints = ['', 'ph--gold', 'ph--pink', 'ph--deep'];
-    shelf.innerHTML = favs.map((i, n) => {
+    const all = MENU.categories.flatMap((c) => c.items);
+    const order = ['Ocean Toast', 'Crab Out Loud!', 'Thai Milk Tea', 'Cottage Paradise', 'Kai Kra Ta', 'Green Boost Smoothie', 'Koi Sao (Khao Soi)', 'Summer Garden Smoothie'];
+    const favs = order.map((n) => all.find((i) => i.name === n && i.fav)).filter(Boolean);
+    shelf.innerHTML = favs.map((i) => {
       const src = PHOTOS.dishes[i.name];
-      const img = src ? `<img src="${src}" alt="${esc(i.name)}" loading="lazy">` : `<div class="ph ${tints[n % 4]}"><span>${esc(i.name)}</span></div>`;
-      return `<article class="dish"><div class="dish__img">${img}<span class="dish__tag">${esc(blurb[i.name] || (i.thai ? 'Thai-inspired' : 'House favorite'))}</span></div>
+      const tag = `<span class="dish__tag">${esc(blurb[i.name] || (i.thai ? 'Thai-inspired' : 'House favorite'))}</span>`;
+      if (!src) {
+        // No photo yet: a deliberate type-only card in the brand's hand-drawn style
+        return `<article class="dish dish--type">${tag}<img class="dish__doodle" src="/img/star-doodle.png" alt="" loading="lazy">
+          <h3>${esc(i.name)}</h3><p>${esc(i.desc)}</p><span class="dish__price">$${esc(i.price)}</span></article>`;
+      }
+      return `<article class="dish"><div class="dish__img"><img src="${src}" alt="${esc(i.name)}" loading="lazy">${tag}</div>
         <div class="dish__body"><h3>${esc(i.name)} <span>$${esc(i.price)}</span></h3><p>${esc(i.desc)}</p></div></article>`;
     }).join('');
   }

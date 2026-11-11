@@ -44,7 +44,7 @@
      "desc": "Maine blueberry jelly, house cream egg dressing, dry shredded pork, ham, cheddar cheese on toast.",
      "price": "12.95",
      "thai": false,
-     "fav": true
+     "fav": false
     },
     {
      "name": "Piggy Meets Apple",
@@ -246,7 +246,7 @@
      "desc": "Banana, mango, passion fruit and spinach topped with granola, coconut flakes, banana, raspberry, blueberry, goji berries and honey drizzle.",
      "price": "14.95",
      "thai": false,
-     "fav": true
+     "fav": false
     },
     {
      "name": "Bangkok Sunset Bowl",
@@ -279,7 +279,7 @@
      "desc": "Mango, pineapple, spinach, coconut water, bee pollen.",
      "price": "8.95",
      "thai": false,
-     "fav": false
+     "fav": true
     },
     {
      "name": "Thai Heaven Smoothie",
@@ -314,7 +314,7 @@
      "desc": "Pineapple, mango, passion fruit, Greek yogurt, coconut water.",
      "price": "8.95",
      "thai": false,
-     "fav": false
+     "fav": true
     },
     {
      "name": "Citrus Sky Smoothie",
