@@ -23,7 +23,8 @@
      "desc": "Avocado, grilled shrimp with Thai Tom Yum sauce, scrambled egg, cheese, sunflower sprouts on top with scallion and cilantro and fried shallot on sourdough.",
      "price": "15.95",
      "thai": true,
-     "fav": true
+     "fav": true,
+     "img": "/img/ocean-toast.jpg"
     },
     {
      "name": "Koi Sao (Khao Soi)",
@@ -86,7 +87,8 @@
      "desc": "House whipped ricotta, banana, blueberry, mango on top with Maine maple syrup on sourdough.",
      "price": "12.95",
      "thai": false,
-     "fav": true
+     "fav": true,
+     "img": "/img/cottage-paradise.jpg"
     },
     {
      "name": "Tipsy",
@@ -279,7 +281,8 @@
      "desc": "Mango, pineapple, spinach, coconut water, bee pollen.",
      "price": "8.95",
      "thai": false,
-     "fav": true
+     "fav": true,
+     "img": "/img/green-boost.jpg"
     },
     {
      "name": "Thai Heaven Smoothie",
@@ -314,7 +317,8 @@
      "desc": "Pineapple, mango, passion fruit, Greek yogurt, coconut water.",
      "price": "8.95",
      "thai": false,
-     "fav": true
+     "fav": true,
+     "img": "/img/summer-garden.jpg"
     },
     {
      "name": "Citrus Sky Smoothie",
@@ -361,7 +365,8 @@
      "desc": "Iced Thai milk tea topped with half & half.",
      "price": "5.00",
      "thai": true,
-     "fav": true
+     "fav": true,
+     "img": "/img/thai-milk-tea.jpg"
     },
     {
      "name": "Thai Milk Tea + Espresso Shot",

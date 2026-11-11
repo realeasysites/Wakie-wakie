@@ -94,6 +94,10 @@
       return `<article class="dish"><div class="dish__img"><img src="${src}" alt="${esc(i.name)}" loading="lazy">${tag}</div>
         <div class="dish__body"><h3>${esc(i.name)} <span>$${esc(i.price)}</span></h3><p>${esc(i.desc)}</p></div></article>`;
     }).join('');
+    shelf.querySelectorAll('.dish__img img').forEach((img) => img.addEventListener('click', () => {
+      const pics = [...shelf.querySelectorAll('.dish__img img')].map((x) => ({ src: x.getAttribute('src'), caption: x.alt, alt: x.alt }));
+      WWLightbox.open(pics, pics.findIndex((p) => p.src === img.getAttribute('src')));
+    }));
   }
 
   function renderTabs() {
@@ -118,12 +122,23 @@
       const items = c.items.filter((i) => !q || (i.name + ' ' + i.desc).toLowerCase().includes(q));
       if (!items.length) return '';
       return `<section class="menu__cat"><h3>${esc(c.name)}</h3>${items.map((i) => `
-        <div class="mi"><div class="mi__top"><span class="mi__name">${hl(i.name, q)}${i.thai ? '<span class="thai" title="Thai-inspired">✦</span>' : ''}</span><span class="mi__dots"></span><span class="mi__price">$${esc(i.price)}</span></div>
-        ${i.desc ? `<p class="mi__desc">${hl(i.desc, q)}</p>` : ''}</div>`).join('')}</section>`;
+        <div class="mi ${i.img ? 'mi--pic' : ''}">${i.img ? `<button class="mi__pic" data-img="${esc(i.img)}" data-name="${esc(i.name)}" aria-label="See a photo of ${esc(i.name)}"><img src="${esc(i.img)}" alt="" loading="lazy"></button>` : ''}
+        <div class="mi__main"><div class="mi__top"><span class="mi__name">${hl(i.name, q)}${i.thai ? '<span class="thai" title="Thai-inspired">✦</span>' : ''}${i.img ? '<span class="mi__cam" aria-hidden="true">📷</span>' : ''}</span><span class="mi__dots"></span><span class="mi__price">$${esc(i.price)}</span></div>
+        ${i.desc ? `<p class="mi__desc">${hl(i.desc, q)}</p>` : ''}</div></div>`).join('')}</section>`;
     }).join('');
     list.innerHTML = html || `<p class="menu__empty">Nothing matches “${esc(q)}” — but ask us, we might make it anyway.</p>`;
   }
   search.addEventListener('input', renderMenu);
+  list.addEventListener('click', (e) => {
+    const b = e.target.closest('.mi__pic'); if (!b) return;
+    const pics = [...list.querySelectorAll('.mi__pic')].map((x) => ({ src: x.dataset.img, caption: x.dataset.name, alt: x.dataset.name }));
+    WWLightbox.open(pics, pics.findIndex((p) => p.src === b.dataset.img));
+  });
+  // Thai 101: jump to the dish on the menu
+  document.querySelectorAll('.dict button').forEach((b) => b.addEventListener('click', () => {
+    active = 'All'; renderTabs(); search.value = b.dataset.q; renderMenu();
+    document.getElementById('menu').scrollIntoView({ behavior: 'smooth' });
+  }));
 
   fetch('/api/menu').then((r) => r.json()).then((m) => { MENU = m; renderShelf(); renderTabs(); renderMenu(); })
     .catch(() => { list.innerHTML = '<p class="menu__empty">Menu didn’t load — see it on our <a href="https://wakiewakies.square.site/">order page</a>.</p>'; });
