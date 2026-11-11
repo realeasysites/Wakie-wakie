@@ -1,0 +1,15 @@
+{
+  "name": "wakie-wakies",
+  "version": "1.0.0",
+  "description": "Wakie Wakie's — Thai Asian fusion breakfast & smoothie, Westbrook ME. Built by Real Easy Sites.",
+  "main": "server.js",
+  "private": true,
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": "20.x" },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.21.0",
+    "nodemailer": "^6.9.15"
+  }
+}

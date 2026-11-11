@@ -1,0 +1,530 @@
+{
+ "updated": "2026-11-11",
+ "categories": [
+  {
+   "name": "Breakfast & Brunch",
+   "items": [
+    {
+     "name": "Crab Out Loud!",
+     "desc": "Classic Thai-style crispy omelette with lump crab meat, served over jasmine rice and finished with fresh cilantro.",
+     "price": "15.95",
+     "thai": true,
+     "fav": true
+    },
+    {
+     "name": "Kai Kra Ta",
+     "desc": "Fried eggs (2 eggs over easy) Thai sweet pork sausage, ground chicken, carrots, corn, shredded dried pork, scallion, cilantro and fried shallot with toast.",
+     "price": "14.95",
+     "thai": true,
+     "fav": true
+    },
+    {
+     "name": "Ocean Toast",
+     "desc": "Avocado, grilled shrimp with Thai Tom Yum sauce, scrambled egg, cheese, sunflower sprouts on top with scallion and cilantro and fried shallot on sourdough.",
+     "price": "15.95",
+     "thai": true,
+     "fav": true
+    },
+    {
+     "name": "Koi Sao (Khao Soi)",
+     "desc": "Northern Thai style curry, egg noodle with chicken top with shallot, pickled mustard greens, crispy egg noodles, cilantro and lime.",
+     "price": "19.95",
+     "thai": true,
+     "fav": true
+    },
+    {
+     "name": "Kao Tom",
+     "desc": "Ground chicken, carrots, corn Thai-style soft-boiled egg, fresh ginger, scallion, cilantro fried garlic with our homemade rice soup.",
+     "price": "12.95",
+     "thai": true,
+     "fav": false
+    },
+    {
+     "name": "Fluffy Blue",
+     "desc": "Maine blueberry jelly, house cream egg dressing, dry shredded pork, ham, cheddar cheese on toast.",
+     "price": "12.95",
+     "thai": false,
+     "fav": true
+    },
+    {
+     "name": "Piggy Meets Apple",
+     "desc": "Bacon, green apple, cheddar cheese, fig jam, arugula, house cream egg dressing on toast.",
+     "price": "14.95",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Sweet Siam Melt",
+     "desc": "Thai sweet chili, spinach, tomato, cheddar cheese, grilled chicken, grill shallot and basil on sourdough.",
+     "price": "13.95",
+     "thai": true,
+     "fav": false
+    },
+    {
+     "name": "Salmon Thai Kyo",
+     "desc": "Smoked salmon, cream cheese, fresh shallots, fried shallot, mixed green, tomato on bagel.",
+     "price": "14.95",
+     "thai": true,
+     "fav": false
+    },
+    {
+     "name": "Prik Pao Moo Yong",
+     "desc": "Thai chili jam & pork floss bread. Sourdough bread filled with Thai chili jam, pork floss, ham, and melted cheese.",
+     "price": "13.95",
+     "thai": true,
+     "fav": false
+    },
+    {
+     "name": "Berry Medley",
+     "desc": "House whipped ricotta, banana, blueberry, strawberry, and raspberry on top with peanut drizzle, and honey on sourdough.",
+     "price": "13.95",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Cottage Paradise",
+     "desc": "House whipped ricotta, banana, blueberry, mango on top with Maine maple syrup on sourdough.",
+     "price": "12.95",
+     "thai": false,
+     "fav": true
+    },
+    {
+     "name": "Tipsy",
+     "desc": "Mushroom, scallion, cream cheese with our homemade Teriyaki sauce on sourdough.",
+     "price": "13.00",
+     "thai": true,
+     "fav": false
+    },
+    {
+     "name": "Bacon Me Crazy",
+     "desc": "Egg, carrot, onion, cucumber, scallion and cilantro.",
+     "price": "16.95",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Wakie Omelet",
+     "desc": "Egg, mushroom, spinach, basil, onion, cheese, fresh arugula, cilantro on top with toast.",
+     "price": "13.95",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Avocado Toast",
+     "desc": "Fresh avocado slices layered over cream cheese, spinach, and tomato. Finished with poppy seeds and pink Himalayan salt. Served on your choice of bread.",
+     "price": "11.95",
+     "thai": false,
+     "fav": false
+    }
+   ]
+  },
+  {
+   "name": "Quick Classics",
+   "items": [
+    {
+     "name": "Muffin Up!",
+     "desc": "Egg and cheese on English muffin.",
+     "price": "4.95",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Bagel Egg and Cheese",
+     "desc": "",
+     "price": "5.99",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Twin Eggs & Toast",
+     "desc": "",
+     "price": "5.99",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Ham & Cheese",
+     "desc": "",
+     "price": "8.00",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Bagel Cream Cheese",
+     "desc": "",
+     "price": "4.00",
+     "thai": false,
+     "fav": false
+    }
+   ]
+  },
+  {
+   "name": "Small Plates",
+   "items": [
+    {
+     "name": "Crispy Crisp",
+     "desc": "Fried potatoes with spicy cream mayo.",
+     "price": "8.95",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Chives Dumpling",
+     "desc": "Thai style dumpling with chives served with ginger sweet chili sauce.",
+     "price": "9.95",
+     "thai": true,
+     "fav": false
+    },
+    {
+     "name": "Kiew Krob (Crispy Thai Wonton)",
+     "desc": "Crispy fried wontons filled with minced chicken, carrot, scallion and corn. Served with sweet and sour sauce.",
+     "price": "11.00",
+     "thai": true,
+     "fav": false
+    },
+    {
+     "name": "Roll O'Clock",
+     "desc": "Spring mix, avocado, carrot, mint and cucumber served with sweet & sour sauce & peanut sauce.",
+     "price": "9.95",
+     "thai": true,
+     "fav": false
+    },
+    {
+     "name": "Crispy Fried Tofu",
+     "desc": "Served with house creamy peanut sauce.",
+     "price": "9.00",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Brussels Sprouts",
+     "desc": "Crispy brussels sprouts, fresh mint torn served with ginger sweet sauce and topped with pecans.",
+     "price": "9.95",
+     "thai": false,
+     "fav": false
+    }
+   ]
+  },
+  {
+   "name": "Soup & Salad",
+   "items": [
+    {
+     "name": "Mirror Mirror Apple Yum",
+     "desc": "Thai style apple salad with house-made spicy garlic lime, fresh shallot, topped with cilantro, dried chili, fried shallot, fish snack sesame and roasted cashew.",
+     "price": "10.00",
+     "thai": true,
+     "fav": false
+    },
+    {
+     "name": "Wakie Salad",
+     "desc": "Mixed green, seasonal orange, cucumber, strawberry, pecans and cilantro on top with our house balsamic dressing.",
+     "price": "13.00",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Wonton Soup",
+     "desc": "",
+     "price": "9.00",
+     "thai": false,
+     "fav": false
+    }
+   ]
+  },
+  {
+   "name": "Acai & Yogurt Bowls",
+   "items": [
+    {
+     "name": "Acai Origins Bowl",
+     "desc": "Açaí blend with banana and blueberries, topped with granola, coconut flakes, sliced banana, strawberries, goji berries, and a touch of honey drizzle.",
+     "price": "13.95",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Aloha Jungle Bowl",
+     "desc": "Banana, mango, passion fruit and spinach topped with granola, coconut flakes, banana, raspberry, blueberry, goji berries and honey drizzle.",
+     "price": "14.95",
+     "thai": false,
+     "fav": true
+    },
+    {
+     "name": "Bangkok Sunset Bowl",
+     "desc": "Pineapple, mango, Thai basil and nutrient-packed chia seeds topped with granola, coconut flakes, banana, strawberry, blueberry and a touch of honey drizzle.",
+     "price": "13.95",
+     "thai": true,
+     "fav": false
+    },
+    {
+     "name": "Butterquake Bowl",
+     "desc": "Banana, strawberry, creamy peanut butter topped with granola, coconut flakes, banana, blueberry, mango and peanut drizzle.",
+     "price": "13.95",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Karma Yogurt Bowl",
+     "desc": "Greek yogurt, chia seeds, spirulina, and oat milk, topped with granola, bananas, cacao nibs, honey and a burst of fresh berries (strawberry, blueberry & raspberries).",
+     "price": "13.95",
+     "thai": false,
+     "fav": false
+    }
+   ]
+  },
+  {
+   "name": "Smoothies",
+   "items": [
+    {
+     "name": "Green Boost Smoothie",
+     "desc": "Mango, pineapple, spinach, coconut water, bee pollen.",
+     "price": "8.95",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Thai Heaven Smoothie",
+     "desc": "Mango, Greek yogurt, Thai basil, whole milk, honey.",
+     "price": "9.95",
+     "thai": true,
+     "fav": false
+    },
+    {
+     "name": "The Island Smoothie",
+     "desc": "Dragon fruit, mango, pineapple, coconut water, açaí powder.",
+     "price": "8.95",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Dragon Ballll Smoothie",
+     "desc": "Banana, strawberry, dragon fruit, coconut water.",
+     "price": "8.95",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Yuki Matcha Smoothie",
+     "desc": "Strawberry, banana, avocado, matcha powder, almond milk.",
+     "price": "8.95",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Summer Garden Smoothie",
+     "desc": "Pineapple, mango, passion fruit, Greek yogurt, coconut water.",
+     "price": "8.95",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Citrus Sky Smoothie",
+     "desc": "Banana, pineapple, avocado, peanut butter, almond milk, Greek yogurt, spirulina.",
+     "price": "9.95",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Refresh Gin Gin Smoothie",
+     "desc": "Mango, banana, spinach, and ginger, orange juice.",
+     "price": "8.95",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Sleep Tmr Smoothie",
+     "desc": "Banana, espresso, peanut butter, oat milk, pea protein powder.",
+     "price": "8.95",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "PB & B Smoothie",
+     "desc": "Banana, strawberry, peanut butter, almond milk.",
+     "price": "8.95",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Create Your Smoothie",
+     "desc": "Pick 3 fruits, 1 base to build your perfect smoothie.",
+     "price": "9.95",
+     "thai": false,
+     "fav": false
+    }
+   ]
+  },
+  {
+   "name": "Coffee, Tea & Sips",
+   "items": [
+    {
+     "name": "Thai Milk Tea",
+     "desc": "Iced Thai milk tea topped with half & half.",
+     "price": "5.00",
+     "thai": true,
+     "fav": true
+    },
+    {
+     "name": "Thai Milk Tea + Espresso Shot",
+     "desc": "",
+     "price": "6.50",
+     "thai": true,
+     "fav": false
+    },
+    {
+     "name": "Thai Lime Tea",
+     "desc": "Refreshing iced Thai lime tea with fresh lime juice.",
+     "price": "5.50",
+     "thai": true,
+     "fav": false
+    },
+    {
+     "name": "Iced Coconut Matcha",
+     "desc": "",
+     "price": "7.50",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Iced Matcha Strawberry",
+     "desc": "House-made strawberry purée topped with fresh matcha and served with your choice of milk.",
+     "price": "8.00",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Iced Matcha Honey Lemon",
+     "desc": "",
+     "price": "8.00",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Iced Matcha Latte (Premium)",
+     "desc": "",
+     "price": "7.50",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Hot Matcha",
+     "desc": "",
+     "price": "6.50",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Iced Fresh Fruit Tea",
+     "desc": "",
+     "price": "7.00",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "House Ginger Spark",
+     "desc": "Our signature house ginger beer.",
+     "price": "6.00",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Caramel Presso",
+     "desc": "Iced caramel presso.",
+     "price": "6.50",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Latte",
+     "desc": "",
+     "price": "4.50",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Cold Brew",
+     "desc": "",
+     "price": "5.00",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Espresso",
+     "desc": "",
+     "price": "3.00",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Hot Black Coffee",
+     "desc": "",
+     "price": "4.00",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Cocoa",
+     "desc": "",
+     "price": "4.50",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Tea",
+     "desc": "",
+     "price": "3.00",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Unsweetened Iced Tea",
+     "desc": "",
+     "price": "3.50",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Strawberry Passion Mimosa",
+     "desc": "",
+     "price": "13.00",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "S.Pellegrino (500 ml)",
+     "desc": "",
+     "price": "5.00",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Coke",
+     "desc": "",
+     "price": "2.50",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Diet Coke",
+     "desc": "",
+     "price": "2.50",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Sprite",
+     "desc": "",
+     "price": "2.50",
+     "thai": false,
+     "fav": false
+    },
+    {
+     "name": "Water",
+     "desc": "",
+     "price": "2.50",
+     "thai": false,
+     "fav": false
+    }
+   ]
+  }
+ ]
+}

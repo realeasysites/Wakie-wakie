@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: wakie-wakies
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: NOTIFY_EMAIL
+        sync: false
+      - key: DATA_DIR
+        value: /var/data
+    disk:
+      name: wakie-data
+      mountPath: /var/data
+      sizeGB: 1
