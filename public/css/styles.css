@@ -532,3 +532,9 @@ main,.top,.foot,.ticker{position:relative}
 .faq__list a{color:var(--sage-d);font-weight:700}
 @media (max-width:980px){.promises{grid-template-columns:repeat(2,1fr)}.faq__grid{grid-template-columns:1fr;gap:20px}.faq__moon{display:none}}
 @media (max-width:620px){.promises{grid-template-columns:1fr;margin-top:70px}.vision p{font-size:1.1rem!important}}
+.story__window{display:block;width:min(420px,88%);margin:0 auto;filter:drop-shadow(0 30px 40px rgba(0,0,0,.35))}
+.story__media{min-height:auto}
+.story__photo.arch{left:-6px;bottom:-24px;width:170px;height:224px}
+@media (max-width:620px){.story__window{width:86%}.story__photo.arch{width:120px;height:160px;left:0;bottom:-20px}}
+@media (max-width:980px){.story__grid{grid-template-columns:1fr;gap:70px}.story__media{order:0}}
+@media (max-width:620px){.story{padding:80px 0 90px}}

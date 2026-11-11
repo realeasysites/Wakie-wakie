@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520">
+  <defs>
+    <filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="9"/>
+      <feDisplacementMap in="SourceGraphic" scale="4"/>
+    </filter>
+    <clipPath id="pane"><path d="M52 470V214a148 148 0 0 1 296 0v256z"/></clipPath>
+    <pattern id="check" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#f3ead3"/><rect width="5" height="5" fill="#55401d"/><rect x="5" y="5" width="5" height="5" fill="#55401d"/>
+    </pattern>
+    <radialGradient id="glow" cx="66%" cy="32%" r="45%"><stop offset="0" stop-color="#5d7458"/><stop offset="1" stop-color="#26341f"/></radialGradient>
+  </defs>
+
+  <!-- night sky through the window -->
+  <path d="M52 470V214a148 148 0 0 1 296 0v256z" fill="url(#glow)"/>
+  <g clip-path="url(#pane)" filter="url(#ink)">
+    <!-- stars -->
+    <g fill="none" stroke="#efe9dd" stroke-width="2" stroke-linecap="round" opacity=".85">
+      <path d="M96 140c1 6 3 8 9 9-6 1-8 3-9 9-1-6-3-8-9-9 6-1 8-3 9-9z" fill="#efe9dd"/>
+      <path d="M150 96v12M144 102h12"/>
+      <path d="M118 240v10M113 245h10"/>
+      <path d="M318 290c1 5 2 6 7 7-5 1-6 2-7 7-1-5-2-6-7-7 5-1 6-2 7-7z" fill="#efe9dd"/>
+      <path d="M210 120v8M206 124h8"/>
+      <circle cx="80" cy="200" r="1.8" fill="#efe9dd"/><circle cx="182" cy="180" r="1.6" fill="#efe9dd"/><circle cx="300" cy="96" r="1.8" fill="#efe9dd"/><circle cx="160" cy="300" r="1.5" fill="#efe9dd"/><circle cx="330" cy="230" r="1.6" fill="#efe9dd"/>
+      <path d="M95 300a6 6 0 1 0 0 1M86 302c6-5 14-5 20-1" stroke-width="1.6"/>
+    </g>
+    <path d="M110 188c1 5 2 6 7 7-5 1-6 2-7 7-1-5-2-6-7-7 5-1 6-2 7-7z" fill="#d9472b"/>
+    <!-- the moon -->
+    <g stroke="#55401d" stroke-linecap="round" fill="none" transform="translate(18 0) scale(.92) translate(22 14)">
+      <circle cx="256" cy="176" r="64" fill="#f3ead3" stroke-width="4"/>
+      <path d="M270 114a64 64 0 0 1 0 124a36 64 0 0 0 0-124z" fill="#e6dbc0" stroke="none"/>
+      <circle cx="226" cy="146" r="9" stroke-width="2.6"/><circle cx="290" cy="212" r="11" stroke-width="2.6"/><circle cx="283" cy="140" r="5" stroke-width="2.2"/>
+      <path d="M224 178c5 5 15 5 20 0M268 178c5 5 15 5 20 0" stroke-width="3"/>
+      <path d="M226 183l-2 5M234 185v5M242 183l2 5M270 183l-2 5M278 185v5M286 183l2 5" stroke-width="2.2"/>
+      <path d="M246 200c5 5 15 5 20 0" stroke-width="2.8"/>
+      <circle cx="228" cy="196" r="5" fill="#e8a48f" stroke="none" opacity=".75"/><circle cx="284" cy="196" r="5" fill="#e8a48f" stroke="none" opacity=".75"/>
+    </g>
+    <!-- a tiny cow leaping past -->
+    <g transform="translate(150 70) scale(.22)" stroke="#efe9dd" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".9">
+      <path d="M86 118c10-36 60-52 110-48 48 4 74 22 78 52 4 34-22 58-80 62-62 4-118-22-108-66z"/>
+      <path d="M262 92c-4-30 20-50 48-46 30 4 44 30 38 56-6 26-30 38-56 32-18-4-28-20-30-42z"/>
+      <path d="M100 160l-46 34M244 172l52 26M78 128c-22-6-34-22-30-40"/>
+    </g>
+  </g>
+
+  <!-- window frame + mullions -->
+  <g filter="url(#ink)" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M52 470V214a148 148 0 0 1 296 0v256z" stroke="#efe9dd" stroke-width="16"/>
+    <path d="M52 470V214a148 148 0 0 1 296 0v256z" stroke="#55401d" stroke-width="3.5"/>
+    <path d="M200 66v404" stroke="#efe9dd" stroke-width="7" opacity=".9"/>
+    <path d="M52 300h296" stroke="#efe9dd" stroke-width="7" opacity=".9"/>
+    <!-- sill -->
+    <path d="M30 470h340l-10 22H40z" fill="#efe9dd" stroke="#55401d" stroke-width="3.5"/>
+  </g>
+
+  <!-- three friends, seen from behind, looking at the moon -->
+  <g filter="url(#ink)" stroke="#efe9dd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- left: two buns -->
+    <g>
+      <path d="M120 398h16l16 72h-48z" fill="url(#check)"/>
+      <circle cx="128" cy="374" r="22" fill="#55401d"/>
+      <circle cx="108" cy="356" r="10" fill="#55401d"/><circle cx="148" cy="356" r="10" fill="#55401d"/>
+      <path d="M122 404l-18 36" fill="none"/>
+      <path d="M136 404c18 2 34 2 54 0" fill="none"/>
+    </g>
+    <!-- middle: big curly hair (like their drawing), pointing at the moon -->
+    <g>
+      <path d="M192 394h16l18 76h-52z" fill="url(#check)"/>
+      <path d="M176 360c-10-14 2-30 14-26 4-14 26-14 30 0 14-4 24 12 14 26 10 12-2 28-14 24-6 10-24 10-30 0-12 4-24-12-14-24z" fill="#55401d"/>
+      <path d="M208 398c22-30 40-66 48-104" fill="none"/>
+      <path d="M252 300l8 4" fill="none"/>
+    </g>
+    <!-- right: ponytail -->
+    <g>
+      <path d="M264 398h16l16 72h-48z" fill="url(#check)"/>
+      <circle cx="272" cy="374" r="22" fill="#55401d"/>
+      <path d="M272 352c10-10 26-8 30 8 2 10-4 20-12 24" fill="none" stroke="#55401d" stroke-width="9"/><path d="M272 352c10-10 26-8 30 8 2 10-4 20-12 24" fill="none" stroke="#efe9dd" stroke-width="2.5"/>
+      <path d="M266 404c-18 2-36 2-56 0" fill="none"/>
+      <path d="M280 404l18 36" fill="none"/>
+    </g>
+  </g>
+  <path d="M200 20c2 11 5 14 16 16-11 2-14 5-16 16-2-11-5-14-16-16 11-2 14-5 16-16z" fill="#d9472b"/>
+</svg>
