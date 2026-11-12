@@ -557,3 +557,8 @@ main,.top,.foot,.ticker{position:relative}
 .room__photo img{object-position:50% 50%}
 @media (max-width:980px){.room__photo{height:auto}}
 @media (max-width:620px){.room__photo{height:auto}}
+/* hours card: keep the arch corner but stop it clipping the content */
+.visit__grid{border-radius:140px 32px 32px 32px}
+.visit__card{padding:84px 50px 50px 64px}
+@media (max-width:620px){.visit__grid{border-radius:90px 24px 24px 24px}.visit__card{padding:72px 26px 30px}}
+.fbwrap .fb-page,.fbwrap .fb-page span,.fbwrap .fb-page iframe{max-width:100%}
