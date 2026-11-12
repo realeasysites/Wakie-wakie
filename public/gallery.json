@@ -1,9 +1,52 @@
 [
-  {"src":"/img/ocean-toast.jpg","alt":"Ocean Toast — grilled shrimp with tom yum sauce, cilantro and fried shallot on sourdough","cat":"Plates","caption":"Ocean Toast"},
-  {"src":"/img/cottage-paradise.jpg","alt":"Cottage Paradise toast with whipped ricotta, mango, banana and blueberries","cat":"Plates","caption":"Cottage Paradise"},
-  {"src":"/img/thai-milk-tea.jpg","alt":"Iced Thai milk tea in a Wakie Wakie's cup","cat":"Sips & Smoothies","caption":"Thai Milk Tea"},
-  {"src":"/img/green-boost.jpg","alt":"Green Boost smoothie topped with bee pollen","cat":"Sips & Smoothies","caption":"Green Boost Smoothie"},
-  {"src":"/img/summer-garden.jpg","alt":"Summer Garden smoothie with mango and Greek yogurt swirl","cat":"Sips & Smoothies","caption":"Summer Garden Smoothie"},
-  {"src":"/img/dining-room.jpg","alt":"The Wakie Wakie's dining room on Main Street in Westbrook","cat":"The Space","caption":"Our dining room on Main St"},
-  {"src":"/img/three-friends.png","alt":"Hand-drawn illustration of the three Wakie Wakie's founders sharing breakfast","cat":"The Space","caption":"The three of us, hand-drawn","art":true}
+ {
+  "src": "/img/ocean-toast.jpg",
+  "alt": "Ocean Toast — grilled shrimp with tom yum sauce, cilantro and fried shallot on sourdough",
+  "cat": "Plates",
+  "caption": "Ocean Toast"
+ },
+ {
+  "src": "/img/cottage-paradise.jpg",
+  "alt": "Cottage Paradise toast with whipped ricotta, mango, banana and blueberries",
+  "cat": "Plates",
+  "caption": "Cottage Paradise"
+ },
+ {
+  "src": "/img/thai-milk-tea.jpg",
+  "alt": "Iced Thai milk tea in a Wakie Wakie's cup",
+  "cat": "Sips & Smoothies",
+  "caption": "Thai Milk Tea"
+ },
+ {
+  "src": "/img/green-boost.jpg",
+  "alt": "Green Boost smoothie topped with bee pollen",
+  "cat": "Sips & Smoothies",
+  "caption": "Green Boost Smoothie"
+ },
+ {
+  "src": "/img/summer-garden.jpg",
+  "alt": "Summer Garden smoothie with mango and Greek yogurt swirl",
+  "cat": "Sips & Smoothies",
+  "caption": "Summer Garden Smoothie"
+ },
+ {
+  "src": "/img/dining-room.jpg",
+  "alt": "The Wakie Wakie's dining room on Main Street in Westbrook",
+  "cat": "The Space",
+  "caption": "Our dining room on Main St"
+ },
+ {
+  "src": "/img/three-friends.png",
+  "alt": "Hand-drawn illustration of the three Wakie Wakie's founders sharing breakfast",
+  "cat": "The Space",
+  "caption": "The three of us, hand-drawn",
+  "art": true
+ },
+ {
+  "src": "/img/friends-looking-up.png",
+  "alt": "Hand-drawn illustration of the three founders looking up at the moon",
+  "cat": "The Space",
+  "caption": "To the moon",
+  "art": true
+ }
 ]
