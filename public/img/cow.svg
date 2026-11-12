@@ -30,10 +30,15 @@
     <path d="M300 112c18-6 46 0 50 14 4 16-16 26-36 24-22-2-34-30-14-38z" fill="#f2c6b4"/>
     <circle cx="318" cy="128" r="3" fill="#55401d" stroke="none"/><circle cx="336" cy="128" r="3" fill="#55401d" stroke="none"/>
     <!-- happy closed eyes w/ lashes -->
-    <path d="M290 84c5 6 13 6 18 0" stroke-width="4"/>
-    <path d="M292 90l-3 5M299 92v6M306 90l3 5" stroke-width="3"/>
-    <path d="M322 82c5 6 13 6 18 0" stroke-width="4"/>
-    <path d="M324 88l-3 5M331 90v6M338 88l3 5" stroke-width="3"/>
+    <!-- sleepy, half-open eyes -->
+    <path d="M293 87a6.5 6 0 0 0 13 0z" fill="#55401d" stroke-width="1.5"/>
+    <circle cx="302" cy="89" r="1.4" fill="#fffaf0" stroke="none"/>
+    <path d="M289 87c5-4 15-4 20 0" stroke-width="4"/>
+    <path d="M291 84l-3-4M298 82v-5M306 84l3-4" stroke-width="2.6"/>
+    <path d="M325 85a6.5 6 0 0 0 13 0z" fill="#55401d" stroke-width="1.5"/>
+    <circle cx="334" cy="87" r="1.4" fill="#fffaf0" stroke="none"/>
+    <path d="M321 85c5-4 15-4 20 0" stroke-width="4"/>
+    <path d="M323 82l-3-4M330 80v-5M338 82l3-4" stroke-width="2.6"/>
     <!-- horns + ears -->
     <path d="M286 52c-6-14 0-24 8-26" stroke-width="4.5"/>
     <path d="M326 50c8-12 18-14 24-10" stroke-width="4.5"/>
