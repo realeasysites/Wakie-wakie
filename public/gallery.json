@@ -1,9 +1,69 @@
 [
  {
+  "src": "/img/khao-soi.jpg",
+  "alt": "Koi Sao — Northern Thai khao soi curry noodles with crispy noodles",
+  "cat": "Plates",
+  "caption": "Koi Sao (Khao Soi)"
+ },
+ {
+  "src": "/img/kai-kra-ta.jpg",
+  "alt": "Kai Kra Ta Thai skillet breakfast with toast",
+  "cat": "Plates",
+  "caption": "Kai Kra Ta"
+ },
+ {
   "src": "/img/ocean-toast.jpg",
-  "alt": "Ocean Toast — grilled shrimp with tom yum sauce, cilantro and fried shallot on sourdough",
+  "alt": "Ocean Toast — grilled shrimp with tom yum sauce on sourdough",
   "cat": "Plates",
   "caption": "Ocean Toast"
+ },
+ {
+  "src": "/img/berry-medley.jpg",
+  "alt": "Berry Medley toast with whipped ricotta, berries and peanut drizzle",
+  "cat": "Plates",
+  "caption": "Berry Medley"
+ },
+ {
+  "src": "/img/acai-origins.jpg",
+  "alt": "Açaí Origins bowl with banana, strawberries, goji berries and granola",
+  "cat": "Bowls",
+  "caption": "Açaí Origins Bowl"
+ },
+ {
+  "src": "/img/salmon-thai-kyo.jpg",
+  "alt": "Salmon Thai Kyo smoked salmon bagel",
+  "cat": "Plates",
+  "caption": "Salmon Thai Kyo"
+ },
+ {
+  "src": "/img/thai-milk-tea-2.jpg",
+  "alt": "Iced Thai milk teas in Wakie Wakie's cups",
+  "cat": "Sips & Smoothies",
+  "caption": "Thai Milk Tea"
+ },
+ {
+  "src": "/img/tipsy.jpg",
+  "alt": "Tipsy — mushrooms, scallion and cream cheese with house teriyaki on sourdough",
+  "cat": "Plates",
+  "caption": "Tipsy"
+ },
+ {
+  "src": "/img/avocado-toast.jpg",
+  "alt": "Avocado toast",
+  "cat": "Plates",
+  "caption": "Avocado Toast"
+ },
+ {
+  "src": "/img/iced-matcha.jpg",
+  "alt": "Iced matcha latte",
+  "cat": "Sips & Smoothies",
+  "caption": "Iced Matcha Latte"
+ },
+ {
+  "src": "/img/bacon-me-crazy.jpg",
+  "alt": "Bacon Me Crazy fried rice with cucumber and lime",
+  "cat": "Plates",
+  "caption": "Bacon Me Crazy"
  },
  {
   "src": "/img/cottage-paradise.jpg",
@@ -12,10 +72,10 @@
   "caption": "Cottage Paradise"
  },
  {
-  "src": "/img/thai-milk-tea.jpg",
-  "alt": "Iced Thai milk tea in a Wakie Wakie's cup",
-  "cat": "Sips & Smoothies",
-  "caption": "Thai Milk Tea"
+  "src": "/img/kao-tom.jpg",
+  "alt": "Kao Tom Thai rice soup with soft-boiled egg",
+  "cat": "Plates",
+  "caption": "Kao Tom"
  },
  {
   "src": "/img/green-boost.jpg",
@@ -24,23 +84,112 @@
   "caption": "Green Boost Smoothie"
  },
  {
+  "src": "/img/khao-soi-spread.jpg",
+  "alt": "Khao soi and a chicken plate from above",
+  "cat": "Plates",
+  "caption": "Lunch at Wakie's"
+ },
+ {
+  "src": "/img/crispy-crisp.jpg",
+  "alt": "Crispy Crisp fried potatoes with dipping sauces",
+  "cat": "Plates",
+  "caption": "Crispy Crisp"
+ },
+ {
+  "src": "/img/acai-sky.jpg",
+  "alt": "Açaí bowl held up to a blue sky",
+  "cat": "Bowls",
+  "caption": "Açaí to go"
+ },
+ {
   "src": "/img/summer-garden.jpg",
-  "alt": "Summer Garden smoothie with mango and Greek yogurt swirl",
+  "alt": "Summer Garden smoothie",
   "cat": "Sips & Smoothies",
   "caption": "Summer Garden Smoothie"
  },
  {
-  "src": "/img/dining-room.jpg",
-  "alt": "The Wakie Wakie's dining room on Main Street in Westbrook",
-  "cat": "The Space",
-  "caption": "Our dining room on Main St"
+  "src": "/img/grilled-pork-rice.jpg",
+  "alt": "Thai grilled pork with jasmine rice, soft eggs and cucumber",
+  "cat": "Plates",
+  "caption": "Thai grilled pork & rice"
  },
  {
-  "src": "/img/three-friends.png",
-  "alt": "Hand-drawn illustration of the three Wakie Wakie's founders sharing breakfast",
+  "src": "/img/ocean-toast-2.jpg",
+  "alt": "Ocean Toast with shrimp, scrambled egg and sprouts",
+  "cat": "Plates",
+  "caption": "Ocean Toast"
+ },
+ {
+  "src": "/img/bagel-cream-cheese.jpg",
+  "alt": "Bagel and cream cheese with an iced tea",
+  "cat": "Plates",
+  "caption": "Bagel & cream cheese"
+ },
+ {
+  "src": "/img/toastie.jpg",
+  "alt": "Stacked toasted sandwich",
+  "cat": "Plates",
+  "caption": "Stacked toastie"
+ },
+ {
+  "src": "/img/breakfast-sandwich.jpg",
+  "alt": "English muffin breakfast sandwich with a fried egg and cheese",
+  "cat": "Plates",
+  "caption": "Breakfast sandwich"
+ },
+ {
+  "src": "/img/thai-milk-tea.jpg",
+  "alt": "Iced Thai milk tea",
+  "cat": "Sips & Smoothies",
+  "caption": "Thai Milk Tea"
+ },
+ {
+  "src": "/img/house-sip.jpg",
+  "alt": "A Wakie Wakie's house drink",
+  "cat": "Sips & Smoothies",
+  "caption": "House sip"
+ },
+ {
+  "src": "/img/khao-soi-2.jpg",
+  "alt": "Khao soi with chicken and lime",
+  "cat": "Plates",
+  "caption": "Koi Sao"
+ },
+ {
+  "src": "/img/fried-rice-2.jpg",
+  "alt": "Thai fried rice with cucumber and lime",
+  "cat": "Plates",
+  "caption": "Fried rice"
+ },
+ {
+  "src": "/img/crispy-bites.jpg",
+  "alt": "Crispy fried bites with dipping sauces",
+  "cat": "Plates",
+  "caption": "Crispy bites"
+ },
+ {
+  "src": "/img/tipsy-2.jpg",
+  "alt": "Tipsy mushroom toast",
+  "cat": "Plates",
+  "caption": "Tipsy"
+ },
+ {
+  "src": "/img/khao-soi-3.jpg",
+  "alt": "Khao soi",
+  "cat": "Plates",
+  "caption": "Koi Sao"
+ },
+ {
+  "src": "/img/dining-flowers.jpg",
+  "alt": "The Wakie Wakie's dining room with fresh flowers on the table",
   "cat": "The Space",
-  "caption": "The three of us, hand-drawn",
-  "art": true
+  "caption": "Fresh flowers, every table"
+ },
+ {
+  "src": "/img/dining-room.jpg",
+  "alt": "The Wakie Wakie's dining room on Main Street",
+  "cat": "The Space",
+  "caption": "Our dining room"
  },
  {
   "src": "/img/friends-looking-up.png",

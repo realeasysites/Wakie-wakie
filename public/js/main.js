@@ -77,14 +77,15 @@
     'Koi Sao (Khao Soi)': 'Northern Thai curry', 'Fluffy Blue': 'Maine blueberry', 'Aloha Jungle Bowl': 'Crowd favorite',
     'Thai Milk Tea': 'Iced & creamy', 'Cottage Paradise': 'Ricotta + maple',
     'Green Boost Smoothie': 'Bee pollen boost', 'Summer Garden Smoothie': 'Mango + passion fruit',
+    'Berry Medley': 'Ricotta + berries', 'Tipsy': 'House teriyaki', 'Acai Origins Bowl': 'The açaí classic',
   };
 
   function renderShelf() {
     const all = MENU.categories.flatMap((c) => c.items);
-    const order = ['Ocean Toast', 'Crab Out Loud!', 'Thai Milk Tea', 'Cottage Paradise', 'Kai Kra Ta', 'Green Boost Smoothie', 'Koi Sao (Khao Soi)', 'Summer Garden Smoothie'];
+    const order = ['Koi Sao (Khao Soi)', 'Ocean Toast', 'Kai Kra Ta', 'Crab Out Loud!', 'Berry Medley', 'Thai Milk Tea', 'Tipsy', 'Acai Origins Bowl', 'Cottage Paradise', 'Green Boost Smoothie', 'Summer Garden Smoothie'];
     const favs = order.map((n) => all.find((i) => i.name === n && i.fav)).filter(Boolean);
     shelf.innerHTML = favs.map((i) => {
-      const src = PHOTOS.dishes[i.name];
+      const src = PHOTOS.dishes[i.name] || i.img;
       const tag = `<span class="dish__tag">${esc(blurb[i.name] || (i.thai ? 'Thai-inspired' : 'House favorite'))}</span>`;
       if (!src) {
         // No photo yet: a deliberate type-only card in the brand's hand-drawn style

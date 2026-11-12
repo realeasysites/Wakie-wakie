@@ -16,7 +16,8 @@
      "desc": "Fried eggs (2 eggs over easy) Thai sweet pork sausage, ground chicken, carrots, corn, shredded dried pork, scallion, cilantro and fried shallot with toast.",
      "price": "14.95",
      "thai": true,
-     "fav": true
+     "fav": true,
+     "img": "/img/kai-kra-ta.jpg"
     },
     {
      "name": "Ocean Toast",
@@ -31,14 +32,16 @@
      "desc": "Northern Thai style curry, egg noodle with chicken top with shallot, pickled mustard greens, crispy egg noodles, cilantro and lime.",
      "price": "19.95",
      "thai": true,
-     "fav": true
+     "fav": true,
+     "img": "/img/khao-soi.jpg"
     },
     {
      "name": "Kao Tom",
      "desc": "Ground chicken, carrots, corn Thai-style soft-boiled egg, fresh ginger, scallion, cilantro fried garlic with our homemade rice soup.",
      "price": "12.95",
      "thai": true,
-     "fav": false
+     "fav": false,
+     "img": "/img/kao-tom.jpg"
     },
     {
      "name": "Fluffy Blue",
@@ -66,7 +69,8 @@
      "desc": "Smoked salmon, cream cheese, fresh shallots, fried shallot, mixed green, tomato on bagel.",
      "price": "14.95",
      "thai": true,
-     "fav": false
+     "fav": false,
+     "img": "/img/salmon-thai-kyo.jpg"
     },
     {
      "name": "Prik Pao Moo Yong",
@@ -80,7 +84,8 @@
      "desc": "House whipped ricotta, banana, blueberry, strawberry, and raspberry on top with peanut drizzle, and honey on sourdough.",
      "price": "13.95",
      "thai": false,
-     "fav": false
+     "fav": true,
+     "img": "/img/berry-medley.jpg"
     },
     {
      "name": "Cottage Paradise",
@@ -95,14 +100,16 @@
      "desc": "Mushroom, scallion, cream cheese with our homemade Teriyaki sauce on sourdough.",
      "price": "13.00",
      "thai": true,
-     "fav": false
+     "fav": true,
+     "img": "/img/tipsy.jpg"
     },
     {
      "name": "Bacon Me Crazy",
      "desc": "Egg, carrot, onion, cucumber, scallion and cilantro.",
      "price": "16.95",
      "thai": false,
-     "fav": false
+     "fav": false,
+     "img": "/img/bacon-me-crazy.jpg"
     },
     {
      "name": "Wakie Omelet",
@@ -116,7 +123,8 @@
      "desc": "Fresh avocado slices layered over cream cheese, spinach, and tomato. Finished with poppy seeds and pink Himalayan salt. Served on your choice of bread.",
      "price": "11.95",
      "thai": false,
-     "fav": false
+     "fav": false,
+     "img": "/img/avocado-toast.jpg"
     }
    ]
   },
@@ -156,7 +164,8 @@
      "desc": "",
      "price": "4.00",
      "thai": false,
-     "fav": false
+     "fav": false,
+     "img": "/img/bagel-cream-cheese.jpg"
     }
    ]
   },
@@ -168,7 +177,8 @@
      "desc": "Fried potatoes with spicy cream mayo.",
      "price": "8.95",
      "thai": false,
-     "fav": false
+     "fav": false,
+     "img": "/img/crispy-crisp.jpg"
     },
     {
      "name": "Chives Dumpling",
@@ -241,7 +251,8 @@
      "desc": "Açaí blend with banana and blueberries, topped with granola, coconut flakes, sliced banana, strawberries, goji berries, and a touch of honey drizzle.",
      "price": "13.95",
      "thai": false,
-     "fav": false
+     "fav": true,
+     "img": "/img/acai-origins.jpg"
     },
     {
      "name": "Aloha Jungle Bowl",
@@ -408,7 +419,8 @@
      "desc": "",
      "price": "7.50",
      "thai": false,
-     "fav": false
+     "fav": false,
+     "img": "/img/iced-matcha.jpg"
     },
     {
      "name": "Hot Matcha",

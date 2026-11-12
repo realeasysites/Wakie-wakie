@@ -563,3 +563,4 @@ main,.top,.foot,.ticker{position:relative}
 @media (max-width:620px){.visit__grid{border-radius:90px 24px 24px 24px}.visit__card{padding:72px 26px 30px}}
 .fbwrap .fb-page,.fbwrap .fb-page span,.fbwrap .fb-page iframe{max-width:100%}
 .fbwrap{background:transparent;box-shadow:none;place-items:start center;min-height:0}.fbwrap .fb-page{border-radius:16px;overflow:hidden;box-shadow:var(--shadow);background:#fff}
+.g,.g:nth-child(3n+2){border-radius:150px 150px 16px 16px}
